@@ -1,9 +1,9 @@
 # Unofficial HipChat for Desktop
 
-[![Join the chat at gitter.im/Aluxian/HipChat-Desktop](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Aluxian/HipChat-Desktop)
-[![Downloads](https://img.shields.io/github/downloads/Aluxian/HipChat-Desktop/latest/total.svg)](https://github.com/Aluxian/HipChat-Desktop/releases/latest)
+[![Join the chat at gitter.im/Panthro/HipChat-Desktop](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Panthro/HipChat-Desktop)
+[![Downloads](https://img.shields.io/github/downloads/Panthro/HipChat-Desktop/latest/total.svg)](https://github.com/Panthro/HipChat-Desktop/releases/latest)
 
-A simple & beautiful desktop client for HipChat which runs on OS X, Windows and Linux. Built with [NW.js](http://nwjs.io/). Not affiliated with HipChat or Facebook. This is **NOT** an official product. Read the [DISCLAIMER](https://github.com/Aluxian/HipChat-Desktop/blob/master/DISCLAIMER).
+A simple & beautiful desktop client for HipChat which runs on OS X, Windows and Linux. Built with [NW.js](http://nwjs.io/). Not affiliated with HipChat or Facebook. This is **NOT** an official product. Read the [DISCLAIMER](https://github.com/Panthro/HipChat-Desktop/blob/master/DISCLAIMER).
 
 ![Cross-platform screenshot](screenshot.png)
 
@@ -68,13 +68,13 @@ This project does not attempt to reverse engineer the HipChat API or attempt to 
 
 ## Contributions
 
-Contributions are welcome! For feature requests and bug reports please [submit an issue](https://github.com/Aluxian/HipChat-Desktop/issues).
+Contributions are welcome! For feature requests and bug reports please [submit an issue](https://github.com/Panthro/HipChat-Desktop/issues).
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Alexandru Rosianu
+Copyright (c) 2015 Rafael Roman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

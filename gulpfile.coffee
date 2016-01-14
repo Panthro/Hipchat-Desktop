@@ -24,8 +24,8 @@ gulp.task 'clean', ->
         macIcns: './assets-osx/icon.icns'
         macZip: true
         macPlist:
-          NSHumanReadableCopyright: 'aluxian.com'
-          CFBundleIdentifier: 'com.aluxian.hipchatfordesktop'
+          NSHumanReadableCopyright: 'github.com/panthro'
+          CFBundleIdentifier: 'com.panthro.hipchatfordesktop'
       .on 'end', ->
         if process.argv.indexOf('--toolbar') > 0
           shelljs.sed '-i', '"toolbar": true', '"toolbar": false', './src/package.json'
@@ -44,16 +44,16 @@ gulp.task 'clean', ->
         macIcns: './assets-osx/icon.icns'
         macZip: true
         macPlist:
-          NSHumanReadableCopyright: 'aluxian.com'
-          CFBundleIdentifier: 'com.aluxian.hipchatfordesktop'
+          NSHumanReadableCopyright: 'github.com/panthro'
+          CFBundleIdentifier: 'com.panthro.hipchatfordesktop'
       .on 'end', ->
         if process.argv.indexOf('--toolbar') > 0
           shelljs.sed '-i', '"toolbar": true', '"toolbar": false', './src/package.json'
 
 # Only runs on OSX (requires XCode properly configured)
 gulp.task 'sign:osx64', ['build:osx64'], ->
-  shelljs.exec 'codesign -v -f -s "Alexandru Rosianu Apps" ./build/UnofficialHipChat/osx64/UnofficialHipChat.app/Contents/Frameworks/*'
-  shelljs.exec 'codesign -v -f -s "Alexandru Rosianu Apps" ./build/UnofficialHipChat/osx64/UnofficialHipChat.app'
+  shelljs.exec 'codesign -v -f -s "Rafael Roman Apps" ./build/UnofficialHipChat/osx64/UnofficialHipChat.app/Contents/Frameworks/*'
+  shelljs.exec 'codesign -v -f -s "Rafael Roman Apps" ./build/UnofficialHipChat/osx64/UnofficialHipChat.app'
   shelljs.exec 'codesign -v --display ./build/UnofficialHipChat/osx64/UnofficialHipChat.app'
   shelljs.exec 'codesign -v --verify ./build/UnofficialHipChat/osx64/UnofficialHipChat.app'
 
@@ -104,7 +104,7 @@ gulp.task 'pack:win32', ['build:win32'], ->
           shelljs.mkdir '-p', '../../dist' # it fails if the dir doesn't exist
           shelljs.rm '-f', output # it fails if the package already exists
 
-          shelljs.exec "fpm -s dir -t #{target} -a #{port} -n hipchatfordesktop --after-install ./opt/HipChatForDesktop/after-install.sh --after-remove ./opt/HipChatForDesktop/after-remove.sh --license MIT --category Chat --url \"https://hipchat-desktop.com\" --description \"A simple and beautiful app for Facebook HipChat. Chat without distractions on any OS. Not an official client.\" -m \"Alexandru Rosianu <me@aluxian.com>\" -p #{output} -v #{manifest.version} ."
+          shelljs.exec "fpm -s dir -t #{target} -a #{port} -n hipchatfordesktop --after-install ./opt/HipChatForDesktop/after-install.sh --after-remove ./opt/HipChatForDesktop/after-remove.sh --license MIT --category Chat --url \"https://hipchat-desktop.com\" --description \"A simple and beautiful app for Facebook HipChat. Chat without distractions on any OS. Not an official client.\" -m \"Rafael Roman <panthro.rafael@gmail.com>\" -p #{output} -v #{manifest.version} ."
           shelljs.cd '../..'
 
 # Make packages for all platforms

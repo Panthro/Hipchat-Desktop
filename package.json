@@ -4,7 +4,7 @@
   "description": "A simple & beautiful desktop client for HipChat. Not an official app.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Aluxian/HipChat-Desktop.git"
+    "url": "git@github.com:Panthro/HipChat-Desktop.git"
   },
   "scripts": {
     "postinstall": "(cd src && npm install)"

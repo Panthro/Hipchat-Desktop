@@ -1,7 +1,7 @@
 !include "MUI2.nsh"
 
 Name "Unofficial HipChat"
-BrandingText "aluxian.com"
+BrandingText "github.com/panthro"
 
 # set the icon
 !define MUI_ICON "icon.ico"

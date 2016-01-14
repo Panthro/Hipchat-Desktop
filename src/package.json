@@ -2,7 +2,7 @@
   "main": "app.html",
   "name": "UnofficialHipChat",
   "version": "1.1.0",
-  "app-id": "com.aluxian.hipchatfordesktop",
+  "app-id": "com.panthro.hipchatfordesktop",
   "chromium-args": "--disable-setuid-sandbox",
   "window": {
     "width": 800,
@@ -22,11 +22,11 @@
     "request": "^2.56.0",
     "semver": "^4.3.5"
   },
-  "manifestUrl": "https://raw.githubusercontent.com/Aluxian/HipChat-Desktop/master/src/package.json",
+  "manifestUrl": "https://raw.githubusercontent.com/Panthro/HipChat-Desktop/master/src/package.json",
   "packages": {
-    "osx64": "https://github.com/Aluxian/HipChat-Desktop/releases/download/v1.1.0/UnofficialHipChat.dmg",
-    "win32": "https://github.com/Aluxian/HipChat-Desktop/releases/download/v1.1.0/UnofficialHipChatSetup.exe",
-    "linux32": "https://github.com/Aluxian/HipChat-Desktop/releases/download/v1.1.0/UnofficialHipChat_linux32.deb",
-    "linux64": "https://github.com/Aluxian/HipChat-Desktop/releases/download/v1.1.0/UnofficialHipChat_linux64.deb"
+    "osx64": "https://github.com/Panthro/HipChat-Desktop/releases/download/v1.1.0/UnofficialHipChat.dmg",
+    "win32": "https://github.com/Panthro/HipChat-Desktop/releases/download/v1.1.0/UnofficialHipChatSetup.exe",
+    "linux32": "https://github.com/Panthro/HipChat-Desktop/releases/download/v1.1.0/UnofficialHipChat_linux32.deb",
+    "linux64": "https://github.com/Panthro/HipChat-Desktop/releases/download/v1.1.0/UnofficialHipChat_linux64.deb"
   }
 }
