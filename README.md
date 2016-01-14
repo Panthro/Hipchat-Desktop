@@ -1,19 +1,19 @@
-# Unofficial WhatsApp for Desktop
+# Unofficial HipChat for Desktop
 
-[![Join the chat at gitter.im/Aluxian/WhatsApp-Desktop](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Aluxian/WhatsApp-Desktop)
-[![Downloads](https://img.shields.io/github/downloads/Aluxian/WhatsApp-Desktop/latest/total.svg)](https://github.com/Aluxian/WhatsApp-Desktop/releases/latest)
+[![Join the chat at gitter.im/Aluxian/HipChat-Desktop](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Aluxian/HipChat-Desktop)
+[![Downloads](https://img.shields.io/github/downloads/Aluxian/HipChat-Desktop/latest/total.svg)](https://github.com/Aluxian/HipChat-Desktop/releases/latest)
 
-A simple & beautiful desktop client for WhatsApp which runs on OS X, Windows and Linux. Built with [NW.js](http://nwjs.io/). Not affiliated with WhatsApp or Facebook. This is **NOT** an official product. Read the [DISCLAIMER](https://github.com/Aluxian/WhatsApp-Desktop/blob/master/DISCLAIMER).
+A simple & beautiful desktop client for HipChat which runs on OS X, Windows and Linux. Built with [NW.js](http://nwjs.io/). Not affiliated with HipChat or Facebook. This is **NOT** an official product. Read the [DISCLAIMER](https://github.com/Aluxian/HipChat-Desktop/blob/master/DISCLAIMER).
 
 ![Cross-platform screenshot](screenshot.png)
 
-## *WhatsApp* features
+## *HipChat* features
 
 * Group chats
 * Send photos & videos
 * Share locations
 
-## *Unofficial WhatsApp for Desktop* features
+## *Unofficial HipChat for Desktop* features
 
 * Badge with the number of notifications in the dock/taskbar (OS X and Windows)
 * Auto-launch on OS startup (OS X, Windows)
@@ -62,13 +62,13 @@ The output is in `./dist`. Take a look at `gulpfile.coffee` for additional tasks
 
 **TIP**: for OS X, use the `run:osx64` task to build the app and run it immediately.
 
-## Note to WhatsApp
+## Note to HipChat
 
-This project does not attempt to reverse engineer the WhatsApp API or attempt to reimplement any part of the WhatsApp client. Any communication between the user and WhatsApp servers is handled by WhatsApp Web itself; this is just a native wrapper for WhatsApp Web, more akin to a browser than any WhatsApp software.
+This project does not attempt to reverse engineer the HipChat API or attempt to reimplement any part of the HipChat client. Any communication between the user and HipChat servers is handled by HipChat Web itself; this is just a native wrapper for HipChat Web, more akin to a browser than any HipChat software.
 
 ## Contributions
 
-Contributions are welcome! For feature requests and bug reports please [submit an issue](https://github.com/Aluxian/WhatsApp-Desktop/issues).
+Contributions are welcome! For feature requests and bug reports please [submit an issue](https://github.com/Aluxian/HipChat-Desktop/issues).
 
 ## License
 

@@ -57,7 +57,7 @@ module.exports = {
         settings.launchOnStartup = this.checked;
 
         var launcher = new AutoLaunch({
-          name: 'Unofficial WhatsApp',
+          name: 'Unofficial HipChat',
           isHidden: true // hidden on launch - only works on a mac atm
         });
 
@@ -185,7 +185,7 @@ module.exports = {
       type: 'menubar'
     });
 
-    menu.createMacBuiltin('Unofficial WhatsApp');
+    menu.createMacBuiltin('Unofficial HipChat');
     var submenu = menu.items[0].submenu;
 
     submenu.insert(new gui.MenuItem({
@@ -225,14 +225,14 @@ module.exports = {
     }));
 
     menu.append(new gui.MenuItem({
-      label: 'Show Unofficial WhatsApp',
+      label: 'Show Unofficial HipChat',
       click: function() {
         win.show();
       }
     }));
 
     menu.append(new gui.MenuItem({
-      label: 'Quit Unofficial WhatsApp',
+      label: 'Quit Unofficial HipChat',
       click: function() {
         win.close(true);
       }
@@ -267,7 +267,7 @@ module.exports = {
       win.show();
     });
 
-    tray.tooltip = 'Unofficial WhatsApp for Desktop';
+    tray.tooltip = 'Unofficial HipChat for Desktop';
     tray.menu = this.createTrayMenu(win);
 
     // keep the object in memory
