@@ -97,16 +97,14 @@ module.exports = {
   /**
    * Set an interval to sync the badge and the title.
    */
-  syncBadgeAndTitle: function(win, parentDoc, childDoc) {
-    var notifCountRegex = /\((\d)\)/;
-
+  syncBadgeAndTitle: function(win, parentDoc, childWindow) {
     setInterval(function() {
       // Sync title
-      parentDoc.title = childDoc.title;
+      parentDoc.title = childWindow.document.title;
 
       // Find count
-      var countMatch = notifCountRegex.exec(childDoc.title);
-      var label = countMatch && countMatch[1] || '';
+      var notificationCount = childWindow.HC.Actions.AppActions.notifier.totalUnreadCount;
+      var label = notificationCount > 0 ? notificationCount :  '';
       win.setBadgeLabel(label);
 
       // Update the tray icon too
@@ -116,7 +114,7 @@ module.exports = {
         var extension = platform.isOSX ? '.tiff' : '.png';
         win.tray.icon = 'images/icon_' + type + alert + extension;
       }
-    }, 100);
+    }, 1000);
   },
 
   /**
